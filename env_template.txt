@@ -1,0 +1,73 @@
+# AI Companion - Environment Variables Template
+# =============================================
+# 
+# INSTRUCTIONS:
+# 1. Copy this file to .env in the same directory
+# 2. Fill in your actual API keys
+# 3. Never commit .env to version control
+#
+# Terminal command: cp env_template.txt .env
+
+# ===========================================
+# GOOGLE GEMINI API (Required)
+# ===========================================
+# Get your key from: https://aistudio.google.com/apikey
+GOOGLE_API_KEY=your_google_api_key_here
+
+# ===========================================
+# ELEVENLABS TEXT-TO-SPEECH (Required for voice)
+# ===========================================
+# Get your key from: https://elevenlabs.io/api
+ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
+
+# Voice ID for your companion
+# Find voices at: https://elevenlabs.io/voice-library
+# Choose any voice that matches your companion's personality
+#
+# Suggested voices to try:
+#   Charlotte: XB0fDUnXU5powFXDhCwa (British, warm)
+#   Adam: pNInz6obpgDQGcFmaJgB (American, clear)
+#   Antoni: ErXwobaYiN019PkySvjV (Calm, well-rounded)
+ELEVENLABS_VOICE_ID=your_voice_id_here
+
+# ===========================================
+# HARDWARE SETTINGS (Optional - uses defaults)
+# ===========================================
+# Webcam device index (usually 0 for built-in)
+WEBCAM_INDEX=0
+
+# Microphone device index (usually default)
+MIC_INDEX=0
+
+# Audio detection threshold (0.0 to 1.0)
+# Lower = more sensitive, Higher = less sensitive
+AUDIO_THRESHOLD=0.02
+
+# ===========================================
+# BEHAVIOR SETTINGS (Optional)
+# ===========================================
+# How long of silence before companion responds (seconds)
+RESPONSE_DELAY=1.5
+
+# Minimum time between greetings when user appears (seconds)
+GREETING_COOLDOWN=30
+
+# Native Audio - Companion HEARS your voice (not just text transcription)
+# Set to "false" to disable (uses less bandwidth)
+USE_NATIVE_AUDIO=true
+
+# ===========================================
+# COMPANION CUSTOMIZATION (Optional)
+# ===========================================
+# Display name for your companion
+COMPANION_NAME=Companion
+
+# Display name for the user
+USER_NAME=User
+
+# ===========================================
+# GITHUB SELF-AWARENESS (Optional)
+# ===========================================
+# GitHub token for self-awareness (reading own repo)
+# Only needed if you want the companion to read its own code
+GITHUB_TOKEN=your_github_token_here

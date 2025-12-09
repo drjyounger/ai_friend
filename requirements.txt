@@ -1,0 +1,44 @@
+# Companion - Multimodal AI Companion
+# Python 3.10+ required
+
+# Core AI - Google Gemini
+google-generativeai>=0.8.0
+
+# Image Generation - Nano Banana (Gemini Image API)
+google-genai>=1.0.0
+
+# Image Processing
+Pillow>=10.0.0
+
+# Voice - ElevenLabs TTS
+elevenlabs>=1.0.0
+
+# Vision - OpenCV for webcam and face detection
+opencv-python>=4.9.0
+numpy>=1.24.0
+
+# Audio Input/Output
+pyaudio>=0.2.14
+sounddevice>=0.4.6
+scipy>=1.11.0
+
+# Audio playback
+pygame>=2.5.0
+
+# Audio analysis for visualization
+pydub>=0.25.0
+
+# Environment variables
+python-dotenv>=1.0.0
+
+# Async networking
+aiohttp>=3.9.0
+
+# Speech recognition (local Whisper)
+# Uncomment if you want local transcription instead of Gemini's native
+# openai-whisper>=20231117
+# torch>=2.0.0
+
+# Speech recognition (Google)
+SpeechRecognition>=3.10.0
+

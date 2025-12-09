@@ -1,0 +1,57 @@
+# Environment and secrets
+.env
+*.env
+
+# Large documentation files (reference only, not needed in repo)
+nanobananaapidocs.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+*.wav
+*.mp3
+
+# Companion's local awareness state (not synced - each instance has its own)
+.companion_awareness.json
+
+# Expense tracking (private - not synced)
+expense_log.md
+.expense_data.json
+
+# Reference photos for facial recognition (private - not synced)
+referencePhotos/*.jpg
+referencePhotos/*.jpeg
+referencePhotos/*.png
+!referencePhotos/.gitkeep
+
+# Cursor
+.cursor/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Backup files
+orig_*.py
+originals/
+buildDocs/
+
