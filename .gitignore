@@ -42,8 +42,6 @@ referencePhotos/*.jpeg
 referencePhotos/*.png
 !referencePhotos/.gitkeep
 
-# Cursor
-.cursor/
 
 # Build artifacts
 build/
